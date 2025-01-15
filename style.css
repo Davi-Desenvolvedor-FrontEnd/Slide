@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section {
+    margin: 1px 0px;
+    padding: 20px 20px;
+    height: 100hv;
+    background-color: #2c3e50;
+    height: 900px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: #0f073be0;
+    color: #333;
+}
+
+
+/* Cabeçalho */
+
+header {
+    padding: 20px 20px;
+    display: flex;
+    background-color: #050d1d;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+img {
+    width: 300px;
+    height: 190px;
+}
+
+header h1 {
+    font-size: 60px;
+    color: #2c3e50;
+}
+
+header p {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+section {
+    background-color: #050d1d;
+    padding: 90px 90px;
+}
+
+section h1 {
+    font-size: 60px;
+    color: #2c3e50;
+    font-style: italic;
+    margin-bottom: 50px;
+    text-shadow: #000000 0.5px 1px 0.1px;
+}
+
+section h2 {
+    font-size: 33px;
+    color: rgb(238, 238, 238);
+    font-style: unset;
+    line-height: 40px;
+}
+
+section h3 {
+    font-size: 25px;
+    color: rgb(236, 214, 15);
+}
+
+section p,
+table tr {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section span {
+    background-color: green;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+table td {
+    padding-left: 30px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+
+    header,
+    section {
+        margin: 20px;
+        padding: 20px;
+        background-image: url('imagens/fundo.webp');
+        background-position: center;
+        background-size: cover;
+        height: 100hv;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section p {
+        font-size: 1.5em;
+    }
+
+    img {
+        width: 200;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    table td {
+        padding: 10px;
+    }
+
+    .secao4 .subsecao {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    header,
+    section {
+        margin: 2px;
+        margin-bottom: 20px;
+        padding: 12px;
+        background-image: url('imagens/fundo.webp');
+        background-position: center;
+        background-size: cover;
+        height: 100hv;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    section p,
+    table td {
+        font-size: 1em;
+    }
+
+    .subsecao {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 490px) {
+
+    header,
+    section {
+        margin: 1px;
+        padding: 10px;
+        background-image: url('imagens/fundo.webp');
+        background-position: center;
+        background-size: cover;
+        height: 100hv;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.1em;
+    }
+
+    section h3 {
+        font-size: 1em;
+    }
+
+    section h2 span {
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    table td {
+        font-size: 0.5em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    .secao4 {
+        flex-direction: column;
+
+        display: flex;
+    }
+}
+
+@media (max-width: 420px) {
+
+    header,
+    section {
+        margin: 1px;
+        padding: 10px;
+        background-image: url('imagens/fundo.webp');
+        background-position: center;
+        background-size: cover;
+        height: 100hv;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    img {
+        width: 260px;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.1em;
+    }
+
+    section h3 {
+        font-size: 1em;
+        text-shadow: 1px 1px 1px #000000;
+    }
+
+    section h2 span {
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    table td {
+        font-size: 0.5em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    .secao4 {
+        flex-direction: column;
+
+        display: flex;
+    }
+}
